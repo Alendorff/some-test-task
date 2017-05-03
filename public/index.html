@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jungo</title>
+  <style>
+    .container {
+      width: 100%;
+      min-width: 250px;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Data upload for Jungo service</h1>
+
+<div class="container">
+  <p>File upload</p>
+  <form id="file_form" enctype="multipart/form-data" method="post" action="/api">
+    <input type="file" name="file">
+
+
+    <hr>
+    <p>Put some links on files</p>
+    <input type="text" name="link1" placeholder="Link...">
+    <input type="text" name="link2" placeholder="Link...">
+    <input type="text" name="link3" placeholder="Link...">
+    <input type="text" name="link4" placeholder="Link...">
+    <input type="text" name="link5" placeholder="Link...">
+    <input type="text" name="link6" placeholder="Link...">
+    <hr>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
