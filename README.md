@@ -46,6 +46,7 @@ POST localhost:3000/api
 ```
 git clone https://github.com/Alendorff/some-test-task.git ttask
 cd ./ttask
+mkdir uploads
 npm i
 npm start
 ```
