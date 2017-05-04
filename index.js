@@ -2,7 +2,7 @@
 
 const express      = require('express'),
       app          = express(),
-      path = require('path'),
+      path         = require('path'),
       responseTime = require('response-time'),
       bodyParser   = require('body-parser'),
       morgan       = require('morgan'),
