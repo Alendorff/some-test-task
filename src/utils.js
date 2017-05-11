@@ -27,12 +27,11 @@ const getUid = function () {
 /**
  * Calculates sha1 hash of provided buffer
  * @param buf
- * @param key default is "" - empty string
  * @param digest default is "" - empty string
  * @returns {Buffer|string}
  */
-const sha1 = function (buf, key = '', digest = '') {
-  return crypto.createHmac('sha1', key).update(buf).digest(digest)
+const sha1 = function (buf, digest = '') {
+  return crypto.createHash('sha1').update(buf).digest(digest)
 };
 
 /**

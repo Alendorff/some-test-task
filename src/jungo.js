@@ -66,7 +66,7 @@ router.post('/api', upload.single('file'), (req, res, next) => {
     // handle bulbResponse: sha1(sha1(file body) + bulbResponse)
     .then((results) => {
       uniqueLinks.forEach((key, i) => {
-        files[key] = sha1(Buffer.concat([sha1(fs.readFileSync(files[key])), Buffer.from(results[i])]), '', 'hex');
+        files[key] = sha1(Buffer.concat([sha1(fs.readFileSync(files[key])), Buffer.from(results[i])]), 'hex');
       });
       return files;
     })
